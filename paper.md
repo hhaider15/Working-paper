@@ -3,27 +3,27 @@ title: 'Topic Modeling on CORD-19 articles'
 tags:
   - topic modeling
   - covid-19
-  - cord19
+  - cord-19
   - lda
 authors:
   - name: Thanasis Vergoulis
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-0555-4128
     affiliation: 1
   - name: Panagiotis Deligiannis
     orcid: 0000-0000-0000-0000
     affiliation: 2
   - name: Serafeim Chatzopoulos
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-1714-5225
     affiliation: 1
   - name: Ilias Kanellos
-    orcid: 0000-0000-0000-0000
-    affiliation: 1
-  - name: Danae Pla Karidi
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0003-2146-3795
     affiliation: 1
   - name: Ali Haider Bangash
     orcid: 0000-0002-8256-3194
     affiliation: 3
+  - name: Danae Pla Karidi
+    orcid: 0000-0002-3154-6212
+    affiliation: 1
 affiliations:
  - name: ATHENA RC, Maroussi, Greece
    index: 1
@@ -36,52 +36,38 @@ bibliography: paper.bib
 
 # Introduction
 
-Since the beginning of the 2019-20 coronavirus pandemic, a large number of relevant articles has been published. In addition ... 
+Since the beginning of the 2019-20 coronavirus pandemic, many scientific articles studying the COVID-19 disease and the coronavirus that causes it have been published. In addition, a large number of previously published articles, that describe useful, relevant background knowledge became popular. 
 
+In response to this situation, the Allen Institute for AI constructed and made available the COVID-19 Open Research Dataset (CORD-19) [@CORD-19], a dataset containing metadata for over 47,000 articles which are relevant to COVID-19 and the coronavirus family of viruses. This dataset also includes the full text of over 36,000 of these articles. The intention was to mobilize researchers to analyse these data using contemporary techniques of text mining and natural language processing to generate insights in support of the fight against the corresponding disease. 
 
-Add to this section a couple of paragraphs introducing the work done dring the BioHackathon, CodeFest, VoCamp or Sprint event. Please add references whenever needed, for instance [@Katayamaetal-2010].
+Based on the previous, and in the context of the [COVID-19 Biohackathon of April 2020](https://github.com/virtual-biohackathons/covid-19-bh20), we decided to analyse the CORD-19 dataset applying LDA [@LDA], a widely known topic modeling algorithm, to reveal a set of topics that are relevant to the corresponding texts. Our intention was to identify potentially interesting, latend topics and relationships that could help researchers better understand and organise their knowledge of the domain. As a result, we worked in the following tasks:
 
-Please separate paragraphs with a double line.
+* We collected and preprocessed data from the CORD-19 dataset.  
+* We applied LDA on the abstracts of the articles contained in the CORD-19 dataset.
+* We developed a prototype interface to visualise the produced topics. 
+* We performed a first attempt to interpret and evaluate the resulting topics.  
+
+# Methods
 
 ## Data Collection 
 
 TODO 
 
-### Subsection level 3
+## Topic Modeling
 
-Please keep sections to a maximum of three levels.
+TODO
 
-## Tables, figures and so on
+## Prototype Interface
 
-Please remember to introduce tables (see Table 1) before they appear on the document. We recommend to center tables, formulas and figure but not the corresponding captions. Feel free to modify the table style as it better suits to your data.
+TODO
 
-Table 1
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
+# Discussion 
 
-Remember to introduce figures (see Figure 1) before they appear on the document. 
-
-![BioHackrXiv logo](./biohackrxiv.png)
- 
-Figure 1. A figure corresponding to the logo of our BioHackrXiv preprint.
-
-# Methods
-
-Feel free to use numbered lists or bullet points as you need.
-* Item 1
-* Item 2
-
-# Discussion and/or Conclusion
-
-We recommend to include some discussion or conclusion about your work. Feel free to modify the section title as it fits better to your manuscript.
+TODO 
 
 # Future work
 
-And maybe you want to add a sentence or two on how you plan to continue. Please keep reading to learn about citations and references.
-
-For citations of references, we prefer the use of parenthesis, last name and year. If you use a citation manager, Elsevier – Harvard or American Psychological Association (APA) will work. If you are referencing web pages, software or so, please do so in the same way. Whenever possible, add authors and year. We have included a couple of citations along this document for you to get the idea. Please remember to always add DOI whenever available, if not possible, please provide alternative URLs. You will end up with an alphabetical order list by authors’ last name.
+TODO
 
 # Jupyter notebooks, GitHub repositories and data repositories
 
@@ -90,7 +76,7 @@ For citations of references, we prefer the use of parenthesis, last name and yea
 * And remember, software and data need a license for them to be used by others, no license means no clear rules so nobody could legally use a non-licensed research object, whatever that object is
 
 # Acknowledgements
-Please always remember to acknowledge the BioHackathon, CodeFest, VoCamp, Sprint or similar where this work was (partially) developed.
+This work was done within the [COVID-19 Biohackathon of April 2020](https://github.com/virtual-biohackathons/covid-19-bh20).
 
 # References
 
