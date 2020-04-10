@@ -10,7 +10,7 @@ authors:
     orcid: 0000-0003-0555-4128
     affiliation: 1
   - name: Panagiotis Deligiannis
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-7163-6039
     affiliation: 2
   - name: Serafeim Chatzopoulos
     orcid: 0000-0003-1714-5225
@@ -55,7 +55,9 @@ TODO
 
 ## Topic Modeling
 
-TODO
+In order to retrieve the underlying topics of the articles, we trained LDA models over two subsets of the CORD-19 datasets; the first subset consists of all the scientific article abstracts that are provided by the CORD-19 metadata file while the second subset contains only the abstracts that have been published in 2020. Each dataset was used to produce different topic models that aimed to distinguish the topics of the whole collection of articles and the topics of the scientific articles, published in 2020.
+
+As an initial step we performed text filtering and preprocessing 
 
 ## Prototype Interface
 
