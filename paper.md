@@ -81,7 +81,7 @@ This project was developed in Python and used langdetect for the language filter
 For the purpose of selecting the best models from the sets of models that derived from the two corpora, we employed the use of topic model perplexity and coherence metrics. Perplexity measures the ability of a trained model to generate texts that have not been witnessed during training while coherence provides a quantitative way of measuring inferred topics' interpretability. Utilization of these metrics can prove really helpful in comparing the produced models and designating the ones that show the best performance. A model's performance is proportional to its coherence score and inversely proportional to its perplexity. Below, we present the models sets' coherence and perplexity curves
 
 * Coherence curve for models trained on all the English abstracts from CORD-19:
-<!--   <img src="images/c_v_coherence_all.png" width="300">
+  <img src="images/c_v_coherence_all.png" width="300">
 
 * Perplexity curve for models trained on all the English abstracts from CORD-19:
   <img src="images/log_perplexity_all.png" width="300">
@@ -90,7 +90,7 @@ For the purpose of selecting the best models from the sets of models that derive
   <img src="images/c_v_coherence_2020.png" width="300">
 
 * Perplexity curve for models trained on all the English abstracts from CORD-19, published in 2020:
-  <img src="images/log_perplexity_2020.png" width="300"> -->
+  <img src="images/log_perplexity_2020.png" width="300">
 
 Apart from the calculated metrics, models were also empirically evaluated based on the relevance between each topic's terms and their relevant articles. Based on these, we concluded that from the two model sets, trained on the corpus of all CORD-19 English abstracts and on the corpus of CORD-19 English abstracts published in 2020, the  two models that perform the best are the ones with the 60 and 40 topics, respectively.
 
