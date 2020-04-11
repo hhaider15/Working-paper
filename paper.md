@@ -55,9 +55,16 @@ TODO
 
 ## Topic Modeling
 
-In order to retrieve the underlying topics of the articles, we trained LDA models over two subsets of the CORD-19 datasets; the first subset consists of all the scientific article abstracts that are provided by the CORD-19 metadata file while the second subset contains only the abstracts that have been published in 2020. Each dataset was used to produce different topic models that aimed to distinguish the topics of the whole collection of articles and the topics of the scientific articles, published in 2020.
+In order to extract the latent topics from the scientific articles we generated two corpora of abstracts which are provided by the CORD-19 dataset. The first corpus consisted of all the available English abstracts provided by CORD-19. The second corpus, which was a subset of the first, consisted only of English abstracts of scientific articles published in 2020. We used language detection to classify the English texts and rule out other languages, so that any prospective produced topics will not be affected (using a multilingual training corpus for the topic model, can lead to language specific topics that may not carry any particular semantic clarity).
 
-As an initial step we performed text filtering and preprocessing 
+Each text of the filtered datasets is passed through a preprocessing module that removes textual noise, normalizes the vocabulary and converts the text to more machine-readable form. Initially we use a part-of-speech tagger to detect terms that are nouns, adjectives and verbs and lemmatize them. We then proceed by decapitalizing the text and removing terms that are stopwords, based on a defined stopword list. Punctuation is also removed with the exception of hyphens ("-") and slashes ("/"). We retain these notations as we've observed that are being widely used in our dataset for biological and medical notation. The resulting texts are then accepted only if they have more than 5 terms, after the preprocessing.
+
+Produced preprocess texts are accumulated in a preprocessed text corpus and all terms that are being used in the corpus are being recorded, creating a dictionary. The dictionary maps each term to its number of occurences in the corpus and the number of documents the term appears in, thus providing a metric of significance and redundancy of each term. Terms with too few document occurences can be considered insignificant while ones that appear accross most of the documents can be considered as a stopword. This allows to limit the dictionary to terms that satisfy certain statistical conditions. Since our training dataset can be considered as not sufficient for topic modeling, we limit our dictionaries based on the filters described below, ordered by significance:
+
+1. Keep the terms "coronavirus","sars-cov-2","covid-19" and "sars-ncov2"
+2. Discard any term that appears in less than 2 documents
+3. Discard any term that appears in more than 6% of the documents
+4. Keep at most 30000 terms
 
 ## Prototype Interface
 
