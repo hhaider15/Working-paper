@@ -115,7 +115,9 @@ A prototype Web interface to demonstrate the produced topics has been developed 
 
 # Discussion 
 
-TODO: ALI ADD CONTENT HERE! 
+CoVid 2019 has been wreaking havoc on the face of the earth(1) since the December of 2019(2). At this time of hour, the scientific community has stood up to collaborate in order to curb this menace by exploring it.(3) Due to the novelty of the causative agent(4) & the pandemicity of the disease(5), the requirement of such effective collaborative efforts can not be overstated.(6) We, from our working group in the CoVid 2019- BH20, played our role by coming up with LDA topic models on a massive amount of textual data obtained from as much as over 47 000 scientific articles, including the full text of as much as 36 000 research articles, furthering the efforts to understand the mechanisms at play behind this one-in-a-century phenomenon.
+	The psychological effects of CoVid 2019(7)(8)(9)(10)(11) are coming out to have a destructive effect on all the facets of the society- healthcare apparatus personal & the common citizens alike. A significant relevance is detected by our models for words such as ‘stress’ & ‘anxiety’. Absence of specific antiviral consensus therapy(12) & an effective vaccine(13) & widespread panic associated with the fear of having the PPEs & face masks’ stockpiles depleted(14) is evident everywhere. The associated economic slowdown is stoking the fire.(15)
+ 
 
 # Future work
 
