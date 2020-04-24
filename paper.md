@@ -17,7 +17,7 @@ authors:
     affiliation: 1
   - name: Ali Haider Bangash
     orcid: 0000-0002-8256-3194
-    affiliation: 3
+    affiliation: 3, 4
   - name: Ilias Kanellos
     orcid: 0000-0003-2146-3795
     affiliation: 1
@@ -31,6 +31,8 @@ affiliations:
    index: 2
 - name: Shifa College of Medicine, STMU, Islamabad, Pakistan
    index: 3
+- name: SYNCH, Pakistan
+   index: 4
 bibliography: paper.bib
 ---
 
